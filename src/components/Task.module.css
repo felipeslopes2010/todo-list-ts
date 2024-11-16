@@ -1,0 +1,24 @@
+.container:first-of-type {
+    margin-top: 1.5rem;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+
+    padding: 1rem;
+
+    border-radius: 8px;
+
+    border: 1px solid var(--gray-400);
+    background-color: var(--gray-500);
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.06);
+}
+
+.container p {
+    flex: 1;
+    font-size: 0.875rem;
+    line-height: 1.6;
+}

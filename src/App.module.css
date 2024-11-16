@@ -1,0 +1,78 @@
+.container {
+  max-width: 736px;
+  margin: 0 auto;
+}
+
+.searchWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+
+  gap: 0.5rem;
+  margin-top: -1.8rem;
+}
+
+.searchWrapper input {
+  padding: 1rem;
+
+  width: 100%;
+
+  color: var(--gray-300);
+  line-height: 1.4;
+
+  background-color: var(--gray-500);
+  border: 1px solid var(--gray-700);
+  border-radius: 8px;
+}
+
+.searchWrapper button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  padding: 1rem;
+
+  color: var(--gray-100);
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.4;
+
+  border: none;
+  border-radius: 8px;
+  background-color: var(--blue-dark);
+}
+
+.taskListHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 4rem;
+}
+
+.taskListHeader strong {
+  margin-right: 0.5rem;
+  color: var(--blue);
+  font-size: 0.875rem;
+}
+
+.taskListHeader span {
+  color: var(--gray-200);
+  font-size: 0.75rem;
+  font-weight: 700;
+
+  padding: 0.125rem 0.5rem;
+  border-radius: 999px;
+  background-color: var(--gray-400);
+}
+
+.taskList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
