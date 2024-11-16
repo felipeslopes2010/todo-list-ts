@@ -5,7 +5,7 @@
 .container {
     width: 100%;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 0.75rem;
 
     padding: 1rem;
