@@ -3,7 +3,7 @@
   margin: 0 auto;
 }
 
-.searchWrapper {
+.inputWrapper {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,12 +14,12 @@
   margin-top: -1.8rem;
 }
 
-.searchWrapper input {
+.inputWrapper input {
   padding: 1rem;
 
   width: 100%;
 
-  color: var(--gray-300);
+  color: var(--gray-100);
   line-height: 1.4;
 
   background-color: var(--gray-500);
@@ -27,7 +27,7 @@
   border-radius: 8px;
 }
 
-.searchWrapper button {
+.inputWrapper button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,13 +36,23 @@
   padding: 1rem;
 
   color: var(--gray-100);
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 700;
   line-height: 1.4;
 
   border: none;
   border-radius: 8px;
   background-color: var(--blue-dark);
+
+  cursor: pointer;
+}
+
+.inputWrapper button:hover {
+  background-color: var(--blue);
+}
+
+.inputWrapper button:disabled {
+  opacity: 0.5;
 }
 
 .taskListHeader {

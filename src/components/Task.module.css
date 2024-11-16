@@ -22,3 +22,21 @@
     font-size: 0.875rem;
     line-height: 1.6;
 }
+
+.container svg {
+    color: var(--gray-300);
+    cursor: pointer;
+}
+
+.container svg:hover {
+    color: var(--danger-red);
+}
+
+.taskCompleted {
+    text-decoration: line-through;
+    color: var(--gray-300);
+}
+
+.taskIncompleted {
+    text-decoration: none;
+}
