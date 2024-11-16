@@ -18,7 +18,7 @@ function App() {
   const [tasks, setTasks] = useState<TaskInterface[]>([]);
   const [newTaskContent, setNewTaskContent] = useState('');
 
-  const createTasksCount = tasks.length;
+  const createdTasksCount = tasks.length;
   const completedTasksCount = tasks.filter(task => task.completed).length;
 
   function handleNewTask() {
@@ -50,10 +50,10 @@ function App() {
   }
 
   useEffect(() => {
-    const storedTasks = localStorage.getItem("@todo-list:tasks");
+    const savedTasksFromLocalStorage = localStorage.getItem("@todo-list:tasks");
 
-    if (storedTasks) {
-      setTasks(JSON.parse(storedTasks));
+    if (savedTasksFromLocalStorage) {
+      setTasks(JSON.parse(savedTasksFromLocalStorage));
     }
   }, []);
 
@@ -83,7 +83,7 @@ function App() {
         <div className={styles.taskListHeader}>
           <div className={styles.createdTasks}>
             <strong>Tarefas criadas</strong>
-            <span>{createTasksCount}</span>
+            <span>{createdTasksCount}</span>
           </div>
           <div className={styles.doneTasks}>
             <strong>Concluídas</strong>
