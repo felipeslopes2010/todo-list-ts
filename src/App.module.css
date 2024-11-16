@@ -65,9 +65,15 @@
   margin-top: 4rem;
 }
 
-.taskListHeader strong {
+.taskListHeader > .createdTasks > strong {
   margin-right: 0.5rem;
   color: var(--blue);
+  font-size: 0.875rem;
+}
+
+.taskListHeader > .doneTasks > strong {
+  margin-right: 0.5rem;
+  color: var(--purple);
   font-size: 0.875rem;
 }
 
