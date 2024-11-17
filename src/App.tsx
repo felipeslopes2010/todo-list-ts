@@ -86,7 +86,7 @@ function App() {
           </div>
           <div className={styles.doneTasks}>
             <strong>Concluídas</strong>
-            <span>{completedTasksCount}</span>
+            <span>{completedTasksCount} de {createdTasksCount}</span>
           </div>
         </div>
 
