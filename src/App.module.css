@@ -95,6 +95,26 @@
   gap: 0.75rem;
 }
 
+.emptytaskList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 5.5rem 1.5rem;
+}
+
+.emptytaskList svg {
+  margin-bottom: 1rem;
+  opacity: 0.5;
+}
+
+.emptytaskList svg,
+.emptytaskList strong,
+.emptytaskList p  {
+  color: var(--gray-300);
+  line-height: 1.4;
+}
+
 @media(max-width: 1440px) {
   html {
     font-size: 87.5%;
