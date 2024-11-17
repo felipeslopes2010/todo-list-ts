@@ -38,7 +38,7 @@ function App() {
 
   function handleCompleteTask(id: string) {
     const updatedTasks = tasks.map(task =>
-      task.id === id ? { ...task, completed: !task.completed } : task
+      task.id === id ? { ...task, completed: !task.completed }: task
     );
 
     setTasks(updatedTasks);

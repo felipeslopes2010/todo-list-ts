@@ -28,9 +28,38 @@
     cursor: pointer;
 }
 
-.container svg:hover {
+.container > svg:hover {
     color: var(--danger-red);
 }
+
+.checkContainer {
+    min-width: 1.25rem;
+    height: 1.25rem;
+    border: none;
+    background: none;
+
+    cursor: pointer;
+}
+
+.checkContainer div {
+    width: 80%;
+    height: 80%;
+    border: 2px solid var(--blue);
+    border-radius: 50%;
+}
+
+.checkContainer div:hover {
+    border: 2px solid var(--blue-dark);
+}
+
+.checkContainer > svg {
+    color: var(--purple-dark);
+}
+
+.checkContainer > svg:hover {
+    color: var(--purple);
+}
+
 
 .taskCompleted {
     text-decoration: line-through;
